@@ -30,7 +30,10 @@ requirements.txt\
 建议采取多线程同时抓取，提高速度\
 Mac用户在命令行中输入 scrapy crawl weibo_spider \
 Windows用户在命令行中输入 scrapy runspider weibo_spider.py 
-
+![多线程](https://github.com/CUHKSZ-TQL/WeiboSpider_SentimentAnalysis/blob/master/WeiboSpider/Images/%E5%A4%9A%E7%BA%BF%E7%A8%8B.png)
 **5.检查抓取的数据**
 
 数据会存储在sina database中，collection下会有tweets（微博）comments（评论）account（账号）
+![tweets](https://github.com/CUHKSZ-TQL/WeiboSpider_SentimentAnalysis/blob/master/WeiboSpider/Images/tweets.png)
+![comments](https://github.com/CUHKSZ-TQL/WeiboSpider_SentimentAnalysis/blob/master/WeiboSpider/Images/comments.png)
+
