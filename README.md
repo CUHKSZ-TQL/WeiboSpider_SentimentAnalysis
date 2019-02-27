@@ -1,2 +1,2 @@
-# WeiboSpider_SentimentAnalysis
+# 雾霾与微博用户的行为分析
 借助Python抓取微博数据，并对抓取的数据进行情绪分析
