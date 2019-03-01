@@ -37,3 +37,5 @@ Windows用户在命令行中输入 `scrapy runspider weibo_spider.py`
 ![tweets](https://github.com/CUHKSZ-TQL/WeiboSpider_SentimentAnalysis/blob/master/WeiboSpider/Images/tweets.png)
 ![comments](https://github.com/CUHKSZ-TQL/WeiboSpider_SentimentAnalysis/blob/master/WeiboSpider/Images/comments.png)
 
+## 第二部分：评论情绪分析
+见`Sentiment analysis.ipynb`
