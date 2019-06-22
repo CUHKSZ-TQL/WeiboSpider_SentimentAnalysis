@@ -4,6 +4,9 @@
 ## 第一部分：微博数据抓取
 参考自[https://github.com/nghuyong/WeiboSpider/tree/search](https://github.com/nghuyong/WeiboSpider/tree/search)
 
+### （一）利用高级搜索抓取指定微博
+本部分请参考文件夹`WeiboSpider`中的内容
+
 **1.安装依赖：**
 
 mongodb\
@@ -36,6 +39,26 @@ Windows用户在命令行中输入 `scrapy runspider weibo_spider.py`
 数据会存储在`sina` `database`中，`collection`下会有`tweets`（微博）`comments`（评论）`account`（账号）
 ![tweets](https://github.com/CUHKSZ-TQL/WeiboSpider_SentimentAnalysis/blob/master/WeiboSpider/Images/tweets.png)
 ![comments](https://github.com/CUHKSZ-TQL/WeiboSpider_SentimentAnalysis/blob/master/WeiboSpider/Images/comments.png)
+
+### （二）根据用户id抓取任意微博
+本部分请参考文件夹`WeiboSpiderSimple`中的内容
+
+**1.安装依赖：**
+
+mongodb\
+requirements.txt\
+
+**2.替换cookie：**
+
+访问 https://weibo.cn/ 并登陆，获取对应的cookie，将`WeiboSpiderSimple/sina/settings.py`中的cookie换成你自己获取到的cookie
+
+**3.指定爬取的用户ID**
+
+将`WeiboSpiderSimple/sina/spider/weibo_spider.py`中的`start_uids`换成你想抓取的对象的微博ID。
+
+**4.开始爬虫**
+
+执行`scrapy crawl weibo_spider`或者直接在pycharm当中运行`WeiboSpiderSimple/sina/spider/weibo_spider.py`
 
 ## 第二部分：探索性分析
 见`EDA.py`
